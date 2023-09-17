@@ -22,13 +22,13 @@
 		width: 100%;
 	}
 	&, .row {
-		min-height: 600px;
+		min-height: 400px;
 		height: calc(100vh);
 	}
 	&.inner-page-cover {
 		&, .row {
-			min-height: 600px;
-			height: calc(30vh);		
+			min-height: 400px;
+			height: calc(20vh);		
 		}
 	}
 	
