@@ -89,6 +89,31 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
+	// Добавьте следующий код после объявления функции siteMenuClone()
+	$(document).ready(function() {
+		// Обработчик кликов на ссылки в мобильном меню
+		$('.site-mobile-menu a.nav-link').on('click', function(e) {
+		// Предотвращаем обычное действие ссылки (переход по ссылке)
+		e.preventDefault();
+		
+		// Получаем значение атрибута href ссылки
+		var targetPage = $(this).attr('href');
+
+		// Плавный переход на целевую страницу
+		$('html, body').animate({
+			scrollTop: $(targetPage).offset().top
+		}, 700); // 1000 миллисекунд (1 секунда) для плавного перехода
+		
+		// Предотвращаем обычное действие ссылки (переход по ссылке)
+		e.preventDefault();
+		
+		// Выполняем перенаправление на целевую страницу
+		window.location.href = targetPage;
+		});
+	});
+	
+  
+
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
