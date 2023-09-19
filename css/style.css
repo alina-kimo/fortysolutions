@@ -6,9 +6,19 @@ body {
   font-size: 1rem; }
 
 
+  .highlighted-text1 {
+    color: #f16821;
+    /* font-weight: 600; */
+    /* text-transform: none; */
+    }
   .highlighted-text {
     color: #f16821;
     font-weight: 600;
+    /* text-transform: none; */
+    }
+  .highlighted-text {
+    color: #f16821;
+    /* font-weight: 600; */
     /* text-transform: none; */
     }
 
